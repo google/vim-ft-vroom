@@ -1,0 +1,3 @@
+- Add :VroomBegin to begin a vroom file
+- Add :VroomRecord to record input (like a maktaba or from a maktaba?)
+- Add :VroomVerify to specify constant output (likely in visual mode)
