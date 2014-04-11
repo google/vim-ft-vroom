@@ -1,3 +1,7 @@
+""
+" @section Introduction, intro
+" Syntax and core settings for the vroom filetype.
+
 if exists('b:did_ftplugin')
   finish
 endif
