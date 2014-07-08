@@ -1,3 +1,20 @@
+" Vim syntax file
+" Language:	Vroom (vim testing and executable documentation)
+" Maintainer:	David Barnett (https://github.com/google/vim-ft.vroom)
+" Last Change:	2014 July 7
+
+" For version 5.x: Clear all syntax items
+" For version 6.x: Quit when a syntax file was already loaded
+if version < 600
+  syntax clear
+elseif exists('b:current_syntax')
+  finish
+endif
+
+let s:cpo_save = &cpo
+set cpo-=C
+
+
 syn include @vroomVim syntax/vim.vim
 syn include @vroomShell syntax/sh.vim
 
@@ -88,3 +105,9 @@ highlight default link vroomDelay Type
 highlight default link vroomStrictness vroomMode
 highlight default link vroomChannel vroomMode
 highlight default link vroomBind vroomMode
+
+let b:current_syntax = 'vroom'
+
+
+let &cpo = s:cpo_save
+unlet s:cpo_save
