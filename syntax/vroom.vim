@@ -18,6 +18,8 @@ set cpo-=C
 syn include @vroomVim syntax/vim.vim
 syn include @vroomShell syntax/sh.vim
 
+syntax match vroomText '\m^\S.*' containedin=NONE contains=@Spell
+
 syntax region vroomAction
     \ matchgroup=vroomOutput
     \ start='\m^  ' end='\m$' keepend
